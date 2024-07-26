@@ -7,42 +7,117 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Vladislav Jidilev </h1> <!--h1 самый крупный заголовок h6 самый маленький заголовок-->
+    <nav>
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#courses">Курсы</a></li>
+            <li><a href="#movies">Фильмы</a></li>
+            <li><a href="#books">Книги</a></li>
+            <li><a href="#photos">Фотографии природы</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#contact">Контакты</a></li>
+            <li><a href="#feedback">Обратная связь</a></li>
+            <li><a href="#quote">Цитата</a></li>
+            <li><a href="#testimonials">Отзывы</a></li>
+        </ul>
+    </nav>
+
+    <h1> Vladislav Jidilev </h1>
     <h2> U2310305 </h2>
-    <p><b>I'm 18 years old </b>I'm inha student at the faculty Socie </p>
-    <ul>
-        <p>These are the classes I attended during the Fall semester.</p>
-        <li>Calculus</li>
-        <li>Physics</li> 
-        <li>Introduction to It</li> 
-        <li>OOP</li> 
-        <li>Academic English</li> 
-        <li>Academic English Reading</li>
-        <li>Physic Experiment</li>
+    <p><b>I'm 18 years old </b>I'm an INHA student at the Faculty of Socie <b>I love OOP </b></p>
 
-        <p>These are the classes I attended during the Spring semester.</p>
-        <li>Calculus 2</li>
-        <li>Physic 2</li>
-        <li> Creative Engineering Design</li>
-        <li>OOP</li>
-        <li>Academic English</li>
-        <li>Technical Writing & Discussion</li>
-        <li>Physics Experiment</li>
-    </ul>
-    <h2> Movies </h2>
-    <a href="https://www.imdb.com/title/tt3032476/?ref_=nv_sr_srsg_0_tt_6_nm_2_q_better%2520">Better call saul</a>
-    <br><a href="https://www.imdb.com/title/tt10665342/?ref_=nv_sr_srsg_9_tt_6_nm_0_q_Halloween">Halloween Ends</a>
-    <br><a href="https://www.imdb.com/title/tt1285016/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_Social">Social Network</a>
+    <section id="courses">
+        <h2>Courses</h2>
+        <h3>These are the classes I attended during the Fall semester.</h3>
+        <ul>
+            <li>Calculus</li>
+            <li>Physics</li>
+            <li>Introduction to IT</li>
+            <li>OOP</li>
+            <li>Academic English</li>
+            <li>Academic English Reading</li>
+            <li>Physics Experiment</li>
+        </ul>
+        <h3>These are the classes I attended during the Spring semester.</h3>
+            <ul>
+                <li>Calculus 2 </li>
+                <li>Physics 2</li>
+                <li>Creative Engineering Design</li>
+                <li>OOP 2</li>
+                <li>Academic English 2</li>
+                <li>Technical Writing & Discussion</li>
+                <li>Physics Experiment 2</li>
+            </ul>
+    </section>
 
-    <br><h2> Books </h2>
-    <a href="https://thegreatestbooks.org/items/225">In Search of Lost Time</a>
-    <br><a href="https://thegreatestbooks.org/items/329">Crime and Punishment</a>
-    <br><a href="https://thegreatestbooks.org/items/213">Anna Karenina</a>
-    </ul>
-    <h3 class = "photos"> Photos </h3>
-    <img src="images\Happyman.jpg" alt="jpg">
-    <img src="images\Sadman.jpg" alt="jpg">
-    <h2>  </h2>
-    <p> My neighbour is Daria. She is 18 years old and she is also student of INHA uni. We are best friends </p>
+    <section id="movies">
+        <h2>Movies</h2>
+        <a href="https://www.imdb.com/title/tt3032476/?ref_=nv_sr_srsg_0_tt_6_nm_2_q_better%2520">Better Call Saul</a>
+        <br><a href="https://www.imdb.com/title/tt10665342/?ref_=nv_sr_srsg_9_tt_6_nm_0_q_Halloween">Halloween Ends</a>
+        <br><a href="https://www.imdb.com/title/tt1285016/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_Social">Social Network</a>
+    </section>
+
+    <section id="books">
+        <h2>Books</h2>
+        <a href="https://www.chitai-gorod.ru/product/evgeniy-onegin-roman-v-stihah-1288766">Evgeniy Onegin</a>
+        <br><a href="https://thegreatestbooks.org/items/329">Crime and Punishment</a>
+        <br><a href="https://thegreatestbooks.org/items/213">Anna Karenina</a>
+        <br><a href="https://www.chitai-gorod.ru/product/master-i-margarita-2459101">Master and Margarit</a>
+    </section>
+
+    <section id="photos">
+        <h3 class="photos">Photos</h3>
+        <img src="images/Kalan.jpg" alt="Ichan Kala">
+        <img src="images/Moun.jpg" alt="Mountains">
+        <img src="images/Nebo.jpg" alt="Sky">
+        <img src="images/sunset.jpg" alt="Sunset">
+    </section>
+
+    <section id="projects">
+        <h2>Проекты</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Личная веб-страница</h3>
+                <p>Мини-проект для университетского задания с использованием HTML и CSS.</p>
+                <h3>Данная страница находится в разработке </h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контактная информация</h2>
+        <p>Email: <a href="mailto:">example@example.com(тест)</a></p>
+        <p>Телефон: +1234567890(тест)</p>
+    </section>
+
+    <section id="feedback">
+        <h2>Обратная связь</h2>
+        <form action="mailto:example@example.com" method="post" enctype="text/plain">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <input type="submit" value="Отправить">
+        </form>
+    </section>
+
+    <section id="quote">
+        <blockquote>
+            <p>"The only way to do great work is to love what you do." - Steve Jobs</p>
+        </blockquote>
+    </section>
+
+    <section id="testimonials">
+        <h2>Отзывы</h2>
+        <blockquote>
+            <p>"Владислав - ответственный и внимательный студент, всегда стремящийся к совершенству." - Преподаватель Абдуллаев Сарвар.</p>
+        </blockquote>
+    </section>
 </body>
 </html>
+

@@ -1,51 +1,135 @@
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #f0f4f8;
+    background: linear-gradient(rgba(240, 239, 239, 0.8), rgba(255, 255, 255, 0.8)), url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
-    color: #333333;
-} 
+    color: #333;
+}
 
-h2 {
-    color: #0056b3;
-    margin-top: 20px;
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
 }
 
 p {
-    margin: 10px;
-    padding: 10px;
+    margin: 10px 0;
+    line-height: 1.8;
 }
 
-ul {
+
+nav ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
     padding: 0;
+    background-color: #333;
 }
 
-ul li {
-    background: #ffffff;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+nav ul li {
+    margin: 0 10px;
 }
 
-a {
-    color: #007BFF;
+nav ul li a {
+    color: white;
     text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
 }
 
-a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    background-color: #555;
 }
 
-img {
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#photos img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 20px auto;
 }
 
-.photos {
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
     text-align: center;
-    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form textarea {
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+blockquote {
+    font-style: italic;
+    background-color: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+
+#testimonials blockquote {
+    background-color: #f1f1f1;
+    border-left: 5px solid #2c3e50;
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
+#testimonials blockquote p {
+    margin: 0;
 }
